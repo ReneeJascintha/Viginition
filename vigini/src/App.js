@@ -30,15 +30,12 @@ import "./styles.css";
 import SearchEnginePage from './components/searchresults';
 
 const App = () => {
-  return <Home />;
-};
-
-function App() {
   return (
     <div>
+      <Home />
       <SearchEnginePage />
     </div>
   );
-}
+};
 
 export default App;
