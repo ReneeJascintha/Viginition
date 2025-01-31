@@ -4,11 +4,11 @@ import SearchEnginePage from './components/searchresults';
 import "./styles.css";
 
 const App = () => {
-  const imageUrl = "../public/assets/images/bg-image.jpg"; 
+  const imageUrl = process.env.PUBLIC_URL + "/assets/images/bg-image.jpg"; 
   return (
     <div>
-      <Home />
-      <SearchEnginePage backgroundImage={imageUrl} />
+      <Home backgroundImage={imageUrl} />
+      {/* <SearchEnginePage backgroundImage={imageUrl} /> */}
     </div>
   );
 };
