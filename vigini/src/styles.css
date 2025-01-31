@@ -1,0 +1,82 @@
+/* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    color: white;
+    font-family: "Arial", sans-serif;
+  }
+  
+  /* Navbar Styles */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 10px 20px;
+  }
+  
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: black;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .nav-links li {
+    color: black;
+    cursor: pointer;
+  }
+  
+  /* Search Bar */
+  .search-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+  }
+  
+  .search-box {
+    width: 300px;
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+  }
+  
+  .dropdown-btn {
+    background: transparent;
+    border: none;
+    color: white;
+    margin-left: 10px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  /* Title */
+  .title {
+    text-align: center;
+    font-size: 40px;
+    margin-top: 20px;
+  }
+  
+  /* News Section */
+  .news-section {
+    background-color: rgba(255, 255, 255, 0.1);
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+  }
+  
+  .news-section h2 {
+    color: rgba(255, 255, 255, 0.4);
+    font-size: 24px;
+  }
+  
