@@ -30,10 +30,11 @@ import "./styles.css";
 import SearchEnginePage from './components/searchresults';
 
 const App = () => {
+  const imageUrl = "https://source.unsplash.com/random/1600x900"; // Example: Dynamic Unsplash Image
   return (
     <div>
       <Home />
-      <SearchEnginePage />
+      <SearchEnginePage backgroundImage={imageUrl} />
     </div>
   );
 };
