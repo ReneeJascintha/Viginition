@@ -2,6 +2,7 @@ import React from 'react';
 // import { Card, CardContent } from "../ui/card";
 // import { Button } from "../ui/button";
 import Card from '@mui/material/Card';
+import CardContent from '@mui/material/CardContent';
 import Button from '@mui/material/Button';
 
 const SearchEnginePage = () => {
