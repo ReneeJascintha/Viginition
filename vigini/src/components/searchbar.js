@@ -4,6 +4,7 @@ import { faSearch } from "@fortawesome/free-solid-svg-icons";
 
 const SearchBar = ({ backgroundImage }) => {
   return (
+    <div className="search-box">
     <div 
       className="search-container"
       style={{ backgroundImage: `url(${backgroundImage})`, 
@@ -18,6 +19,7 @@ const SearchBar = ({ backgroundImage }) => {
       <button className="search-btn">
         <FontAwesomeIcon icon={faSearch} />
       </button>
+    </div>
     </div>
   );
 };
