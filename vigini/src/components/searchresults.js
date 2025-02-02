@@ -6,17 +6,6 @@ import Button from '@mui/material/Button';
 const SearchEnginePage = () => {
   return (
     <div className="min-h-screen bg-black text-white">
-      {/* Navbar */}
-      <header className="flex justify-between items-center px-8 py-4 bg-white text-black">
-        <h1 className="text-2xl font-bold">V</h1>
-        <nav className="flex space-x-4">
-          <a href="#" className="hover:underline">Home</a>
-          <a href="#" className="hover:underline">Vulscan AI</a>
-          <a href="#" className="hover:underline">Contact us</a>
-          <a href="#" className="hover:underline">About us</a>
-          <a href="#" className="hover:underline">Help</a>
-        </nav>
-      </header>
 
       {/* Search Bar */}
       <div className="flex justify-center py-8">

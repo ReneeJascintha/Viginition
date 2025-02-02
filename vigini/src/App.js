@@ -8,7 +8,7 @@ const App = () => {
   return (
     <div>
       <Home backgroundImage={imageUrl} />
-      {/* <SearchEnginePage backgroundImage={imageUrl} /> */}
+      { <SearchEnginePage/> }
     </div>
   );
 };
