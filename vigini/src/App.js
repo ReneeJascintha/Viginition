@@ -8,7 +8,7 @@ const App = () => {
   const imageUrl = process.env.PUBLIC_URL + "/assets/images/bg-image5.jpg"; 
   return (
     <div className="bg-container">
-      <Home backgroundImage={imageUrl} />
+      <Home />
       { <SearchEnginePage/> }
       <DynamicBackground />;
     </div>

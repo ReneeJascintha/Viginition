@@ -1,9 +1,8 @@
 /* General Styles */
-body {
+.home {
     margin: 0;
     padding: 0;
-    width: 100%;
-    background-color: #000;
+    background-color: #000000;
     color: white;
     font-family: "Arial", sans-serif;
   }
@@ -26,7 +25,7 @@ body {
 .nav-links {
     list-style: none;
     display: flex;
-    gap: 30px;
+    gap: 50px;
 }
   
   .nav-links li {
@@ -98,3 +97,7 @@ body {
     font-size: 24px;
   }
   
+.results{
+  margin: 50px;
+  border: 1px solid rgba(243, 239, 239, 0.1);
+}
