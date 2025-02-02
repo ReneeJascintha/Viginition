@@ -33,7 +33,16 @@
     cursor: pointer;
   }
   
-    /* Search Bar */
+  /* styles.css */
+.bg-container {
+  background-image: url('../public/assets/images/bg-image5.jpg'); 
+  background-size: cover;
+  background-position: center;
+  height: 100vh; /* Full viewport height */
+  width: 100%;
+}
+
+  /* Search Bar */
   .search-container {
     display: flex;
     justify-content: center;
