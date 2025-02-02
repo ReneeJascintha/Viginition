@@ -8,7 +8,7 @@ const Home = () => {
       <Navbar />
       <div className="content">
         <SearchBar />
-        <h1 className="title">VIGINTION</h1>
+        <h1 className="title">VIGINITION</h1>
         <div className="news-section">
           <h2>news section</h2>
         </div>
