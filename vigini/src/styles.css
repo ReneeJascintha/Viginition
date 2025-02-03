@@ -15,23 +15,28 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    background-color: rgba(0, 0, 0, 0);
-    padding: 10px 20px;
-    padding-right: 50px;
+    background-color: rgb(0, 0, 0);
     box-shadow: 0 2px 12px rgba(255, 255, 255, 0.2);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; 
+    opacity: 1;
 }
   
   
 .nav-links {
     list-style: none;
     display: flex;
-    gap: 50px;
+    gap: 40px;
 }
   
   .nav-links li {
     font-family: 'Poppins', 'Playfair Display', sans-serif;
     font-size: 13px;
     color: rgb(255, 255, 255);
+    margin-right: 20px;
     cursor: pointer;
     button{
       background-color: inherit;
@@ -52,13 +57,16 @@
   max-height: 1000px;  /* Set a fixed height for the scrollable area */
   overflow-y: auto;   /* Enable vertical scrolling */
 }
+.bg-container::-webkit-scrollbar {
+  display: none;
+}
 
   /* Search Bar */
   .search-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 50px;
+    margin-top: 120px;
     gap: 10px;
     padding: 20px;
     border-radius: 15px;
@@ -70,12 +78,13 @@
   
   .search-box {
     width: 500px;
-    padding: 10px;
+    padding: 15px;
     border-radius: 20px;
     background-color: inherit;
     box-shadow: 0 2px 12px rgba(255, 255, 255, 0.2);
     border: none;
     font-size: 16px;
+    color: white;
   }
   
   /* Search Button */
@@ -101,9 +110,11 @@
     width: 80%;
     height: 800px;
     margin: 20px auto;
+    margin-top: 100px;
     padding: 20px;
     text-align: center;
     border-radius: 10px;
+    z-index: 1;
   }
   
   .news-section h2 {
@@ -193,9 +204,6 @@
   border-left: 1px solid rgba(243, 239, 239, 0.1);
   width: 900px;
 }
-.results::-webkit-scrollbar {
-  display: none;
-}
 
 .result-box{
   border-bottom: 1px solid rgba(243, 239, 239, 0.1);
@@ -224,23 +232,37 @@
   }
 }
 
-@keyframes fadeIn {
+@keyframes blinkCursor {
   from {
-    opacity: 0;
+    border-right-color: transparent;
   }
   to {
-    opacity: 1;
+    border-right-color: #ffffff; /* Cursor color */
   }
 }
 
 .tagline {
-  font-family: Arial, sans-serif;
+  display: inline-block;
+  font-family: 'Poppins', 'Playfair Display', sans-serif;
   font-size: 13px;
-  margin-left: 900px;
-  font-weight: bold;
-  color: #ffffff;  /* You can change the color */
+  margin-left: 675px;
+  color: #ffffff; /* Text color */
   white-space: nowrap;
   overflow: hidden;
-  width: 0;  /* Start with no width */
-  animation: typing 3s steps(30) 0.5s forwards, fadeIn 2s ease-out 1s;
+  border-right: 2px solid #ffffff; /* Cursor */
+  width: 0; /* Start with no width */
+  animation: typing 8s steps(90) infinite, blinkCursor 4s step-end infinite;
+}
+
+.content{
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+.logo{
+  width:500px;
+  height: 210px;
+  background-image: url('../src/components/viogo.jpg');
+  background-size: 100%;
+  background-repeat: no-repeat;
 }

@@ -1,25 +1,3 @@
-// import React from "react";
-// import Navbar from "./navbar";
-// import SearchBar from "./searchbar";
-
-// const Home = () => {
-//   return (
-//     <div className="home">
-//       <Navbar />
-//       <div className="content">
-//         <SearchBar />
-//         <h1 className="title">VIGINTION</h1>
-//         <div className="news-section">
-//           <h2>news section</h2>
-//         </div>
-//       </div>
-//     </div>
-//   );
-// };
-
-// export default Home;
-
-
 import React from "react";
 import SearchBar from "./searchbar";
 import NewsSection from "./NewsSection";
@@ -28,19 +6,20 @@ import NewsSection from "./NewsSection";
 const Home = ({ setIsSearching }) => {
   return (
     <div className="home">
-      <div className="content">
         <SearchBar setIsSearching={setIsSearching} />
-        <h1 className="title">VIGINITION</h1>
-        <div class="tagline">Precision in Every Search.</div>
+        <div className="content">
+        <div className="logo"></div></div>
+        <div class="tagline">Precision in Every Search!</div>
         <div className="news-section">
           <h2>News Section</h2>
           <NewsSection />
           {/* <WeatherWidget />  */}
         </div>
       </div>
-    </div>
+    
   );
 };
 
 export default Home;
 
+ 
