@@ -66,7 +66,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 50px;
+    margin-top: 120px;
     gap: 10px;
     padding: 20px;
     border-radius: 15px;
@@ -161,25 +161,26 @@
   }
 }
 
-@keyframes fadeIn {
+@keyframes blinkCursor {
   from {
-    opacity: 0;
+    border-right-color: transparent;
   }
   to {
-    opacity: 1;
+    border-right-color: #ffffff; /* Cursor color */
   }
 }
 
 .tagline {
-  display: inline;
+  display: inline-block;
   font-family: 'Poppins', 'Playfair Display', sans-serif;
   font-size: 13px;
   margin-left: 675px;
-  color: #ffffff;  /* You can change the color */
+  color: #ffffff; /* Text color */
   white-space: nowrap;
   overflow: hidden;
-  width: 0;  /* Start with no width */
-  animation: typing 3s steps(30) 3s forwards, fadeIn 2s ease-out 1s;
+  border-right: 2px solid #ffffff; /* Cursor */
+  width: 0; /* Start with no width */
+  animation: typing 8s steps(90) infinite, blinkCursor 4s step-end infinite;
 }
 
 .content{
