@@ -10,7 +10,7 @@ const Home = ({ setIsSearching }) => {
         <div className="content">
         <div className="logo"></div></div>
         <div class="tagline">Precision in Every Search!</div>
-        <div className="news-section">
+        <div className="news-section-home">
           <h2>News Section</h2>
           <NewsSection />
           {/* <WeatherWidget />  */}

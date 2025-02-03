@@ -14,7 +14,7 @@ const App = () => {
     <Navbar setIsSearching={setIsSearching} /> {/* Navbar always visible */}
       {!isSearching ? <Home setIsSearching={setIsSearching} /> : <SearchEnginePage />}
       <DynamicBackground />
-      <div className="weather-widget-container" style={{ position: "absolute", top: "90px", left: "20px" }}>
+      <div className="weather-widget-container">
         <WeatherWidget />
       </div>
     </div>
