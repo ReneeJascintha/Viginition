@@ -22,6 +22,7 @@ import SearchEnginePage from "./components/searchresults";
 import DynamicBackground from "./components/DynamicBackground";
 import Navbar from "./components/navbar"; // Move Navbar here
 import "./styles.css";
+import SearchBar from "./components/searchbar";
 
 const App = () => {
   const [isSearching, setIsSearching] = useState(false);

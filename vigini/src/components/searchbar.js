@@ -1,23 +1,3 @@
-// import React from "react";
-
-
-// const SearchBar = ({ backgroundImage }) => {
-//   return (
-//     <div 
-//       className="search-container"
-//     >
-//       <input type="text" className="search-box" placeholder="Search..." />
-      
-//       <button className="search-btn">
-//         <FontAwesomeIcon icon={faSearch} />
-//       </button>
-//     </div>
-//   );
-// };
-
-// export default SearchBar;
-
-
 
 import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
