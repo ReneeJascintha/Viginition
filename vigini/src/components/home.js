@@ -22,6 +22,8 @@
 
 import React from "react";
 import SearchBar from "./searchbar";
+import NewsSection from "./NewsSection";
+// import WeatherWidget from "./WeatherWidget";
 
 const Home = ({ setIsSearching }) => {
   return (
@@ -32,6 +34,8 @@ const Home = ({ setIsSearching }) => {
         <div class="tagline">Precision in Every Search.</div>
         <div className="news-section">
           <h2>News Section</h2>
+          <NewsSection />
+          {/* <WeatherWidget />  */}
         </div>
       </div>
     </div>
