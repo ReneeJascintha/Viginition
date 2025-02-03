@@ -5,10 +5,6 @@ import SearchEnginePage from "./components/searchresults";
 import Navbar from "./components/navbar"; // Move Navbar here
 import WeatherWidget from "./components/WeatherWidget"; // ✅ Import the Weather Widget
 import "./styles.css";
-<<<<<<< HEAD
-// import SearchBar from "./components/searchbar";
-=======
->>>>>>> 9ba620ab0a9a7fff56fa02ac188a3a9c7f549047
 
 const App = () => {
   const [isSearching, setIsSearching] = useState(false);
