@@ -1,26 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&family=Playfair+Display:wght@400;700&display=swap');
+
+
 /* General Styles */
 .home {
     margin: 0;
     padding: 0;
     background-color: inherit;
     color: white;
-    font-family: "Arial", sans-serif;
+    font-family: 'Poppins', 'Playfair Display', sans-serif;
   }
   
   /* Navbar Styles */
 .navbar {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
     background-color: rgba(0, 0, 0, 0);
     padding: 10px 20px;
+    padding-right: 50px;
     box-shadow: 0 2px 8px rgba(255, 255, 255, 0.1);
 }
   
-.logo {
-    font-size: 20px;
-    color: white;
-}
   
 .nav-links {
     list-style: none;
@@ -29,8 +29,16 @@
 }
   
   .nav-links li {
+    font-family: 'Poppins', 'Playfair Display', sans-serif;
+    font-size: 13px;
     color: rgb(255, 255, 255);
     cursor: pointer;
+    button{
+      background-color: inherit;
+      border: 0;
+      font-size: 13px;
+      color: rgb(255, 255, 255);
+    }
   }
   
   /* styles.css */

@@ -1,6 +1,5 @@
 // import React from "react";
-// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-// import { faSearch } from "@fortawesome/free-solid-svg-icons";
+
 
 // const SearchBar = ({ backgroundImage }) => {
 //   return (
@@ -21,6 +20,8 @@
 
 
 import React, { useState } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faSearch } from "@fortawesome/free-solid-svg-icons";
 
 const SearchBar = ({ setIsSearching }) => {
   const [query, setQuery] = useState("");
@@ -33,14 +34,16 @@ const SearchBar = ({ setIsSearching }) => {
   };
 
   return (
-    <form onSubmit={handleSearch}>
+    <form className="search-container" onSubmit={handleSearch}>
       <input
+        className="search-box"
         type="text"
         placeholder="Search..."
         value={query}
         onChange={(e) => setQuery(e.target.value)}
       />
-      <button type="submit">Search</button>
+      <button className="search-btn" type="submit"><FontAwesomeIcon icon={faSearch} /></button>
+
     </form>
   );
 };
