@@ -29,6 +29,7 @@ const Home = ({ setIsSearching }) => {
       <div className="content">
         <SearchBar setIsSearching={setIsSearching} />
         <h1 className="title">VIGINITION</h1>
+        <div class="tagline">Precision in Every Search.</div>
         <div className="news-section">
           <h2>News Section</h2>
         </div>

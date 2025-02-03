@@ -139,3 +139,33 @@
   margin-top: 15px;
   font-family: 'Poppins', 'Playfair Display', sans-serif;
 }
+
+/* Animation for Typing Effect */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.tagline {
+  font-family: Arial, sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  color: #4CAF50;  /* You can change the color */
+  white-space: nowrap;
+  overflow: hidden;
+  width: 0;  /* Start with no width */
+  animation: typing 3s steps(30) 1s forwards, fadeIn 2s ease-out 1s;
+}
