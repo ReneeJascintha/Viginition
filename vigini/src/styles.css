@@ -164,10 +164,9 @@
 
 .tagline {
   display: inline;
-  font-family: Arial, sans-serif;
+  font-family: 'Poppins', 'Playfair Display', sans-serif;
   font-size: 13px;
   margin-left: 900px;
-  font-weight: bold;
   color: #ffffff;  /* You can change the color */
   white-space: nowrap;
   overflow: hidden;

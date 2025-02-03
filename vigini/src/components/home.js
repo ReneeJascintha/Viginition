@@ -6,8 +6,8 @@ const Home = ({ setIsSearching }) => {
     <div className="home">
       <div className="content">
         <SearchBar setIsSearching={setIsSearching} />
-        <img src="C:\Users\admin\Desktop\Viginition\vigini\public\assets\images\viginition logo.PNG" alt="VIGINITION Logo" />
-        <div class="tagline">Precision in Every Search.</div>
+        <img src="" alt="noo" />
+        <div class="tagline">Precision in Every Search!</div>
         <div className="news-section">
           <h2>News Section</h2>
         </div>
@@ -18,3 +18,4 @@ const Home = ({ setIsSearching }) => {
 
 export default Home;
 
+ 
