@@ -48,9 +48,11 @@
   background-position: center; */
   background-color: rgb(0, 0, 0);
   height: 100%;
-  width: 100%;
   max-height: 1000px;  /* Set a fixed height for the scrollable area */
   overflow-y: auto;   /* Enable vertical scrolling */
+}
+.bg-container::-webkit-scrollbar {
+  display: none;
 }
 
   /* Search Bar */
@@ -123,9 +125,6 @@
   border-left: 1px solid rgba(243, 239, 239, 0.1);
   width: 900px;
 }
-.results::-webkit-scrollbar {
-  display: none;
-}
 
 .result-box{
   border-bottom: 1px solid rgba(243, 239, 239, 0.1);
@@ -164,6 +163,7 @@
 }
 
 .tagline {
+  display: inline;
   font-family: Arial, sans-serif;
   font-size: 13px;
   margin-left: 900px;

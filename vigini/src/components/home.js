@@ -6,7 +6,7 @@ const Home = ({ setIsSearching }) => {
     <div className="home">
       <div className="content">
         <SearchBar setIsSearching={setIsSearching} />
-        <img src="../../public/assets/images/viginition logo.PNG" alt="VIGINITION Logo" />
+        <img src="C:\Users\admin\Desktop\Viginition\vigini\public\assets\images\viginition logo.PNG" alt="VIGINITION Logo" />
         <div class="tagline">Precision in Every Search.</div>
         <div className="news-section">
           <h2>News Section</h2>
