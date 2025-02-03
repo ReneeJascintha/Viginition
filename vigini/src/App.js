@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Home from "./components/home";
 import SearchEnginePage from "./components/searchresults";
-// import DynamicBackground from "./components/DynamicBackground";
+import DynamicBackground from "./components/DynamicBackground";
 import Navbar from "./components/navbar"; // Move Navbar here
 import WeatherWidget from "./components/WeatherWidget"; // ✅ Import the Weather Widget
 import "./styles.css";
