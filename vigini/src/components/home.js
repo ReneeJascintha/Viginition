@@ -4,7 +4,6 @@ import SearchBar from "./searchbar";
 const Home = ({ setIsSearching }) => {
   return (
     <div className="home">
-      
         <SearchBar setIsSearching={setIsSearching} />
         <div className="content">
         <div className="logo"></div></div>
