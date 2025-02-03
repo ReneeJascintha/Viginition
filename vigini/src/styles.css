@@ -104,6 +104,7 @@
     width: 80%;
     height: 800px;
     margin: 20px auto;
+    margin-top: 100px;
     padding: 20px;
     text-align: center;
     border-radius: 10px;
@@ -166,10 +167,23 @@
   display: inline;
   font-family: 'Poppins', 'Playfair Display', sans-serif;
   font-size: 13px;
-  margin-left: 900px;
+  margin-left: 675px;
   color: #ffffff;  /* You can change the color */
   white-space: nowrap;
   overflow: hidden;
   width: 0;  /* Start with no width */
-  animation: typing 3s steps(30) 0.5s forwards, fadeIn 2s ease-out 1s;
+  animation: typing 3s steps(30) 3s forwards, fadeIn 2s ease-out 1s;
+}
+
+.content{
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+.logo{
+  width:500px;
+  height: 210px;
+  background-image: url('../src/components/viogo.jpg');
+  background-size: 100%;
+  background-repeat: no-repeat;
 }
