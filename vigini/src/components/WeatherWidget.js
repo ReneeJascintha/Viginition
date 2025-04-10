@@ -6,7 +6,7 @@ const WeatherWidget = () => {
   const [error, setError] = useState(null);
 
   // Position and scroll logic hooks
-  const [position, setPosition] = useState('80px'); // Initial position for the widget
+  const [position, setPosition] = useState('65px'); // Initial position for the widget
   const [lastScrollTop, setLastScrollTop] = useState(0);
 
   // Scroll event listener effect
@@ -19,7 +19,7 @@ const WeatherWidget = () => {
         setPosition('-100px'); // Move widget up to hide inside navbar
       } else {
         // Scrolling up: show the widget below the navbar
-        setPosition('80px'); // Reset the widget to be below the navbar
+        setPosition('65px'); // Reset the widget to be below the navbar
       }
 
       setLastScrollTop(currentScroll <= 0 ? 0 : currentScroll); // Handle negative scrolling
@@ -88,13 +88,15 @@ const WeatherWidget = () => {
 
   return (
     <div className="weather-widget" style={{ top: position }}>
-      <h2>Weather</h2>
       <img src={icon} alt="Weather Icon" className="weather-icon" />
-      <p>{weather.name}</p>
-      <p>{temp}°C</p>
-      <p>{description}</p>
+      <div className="weather-info">
+        <p><strong>{weather.name}</strong></p>
+        <p>{temp}°C</p>
+        <p>{description}</p>
+      </div>
     </div>
   );
+  
 };
 
 export default WeatherWidget;

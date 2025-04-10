@@ -5,7 +5,7 @@ const Navbar = ({ setIsSearching }) => {
   return (
     <nav className="navbar">
       <div className="weather-widget-container">
-        {/* <WeatherWidget /> */}
+        <WeatherWidget />
       </div>
       <ul className="nav-links">
         <li><button onClick={() => setIsSearching(false)}>Home</button></li>
