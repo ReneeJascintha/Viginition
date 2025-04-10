@@ -108,7 +108,7 @@
   .news-section-home {
     background-color: rgba(255, 255, 255, 0.1);
     width: 90%;
-    height: 980px;
+    height: auto;
     margin: 20px auto;
     margin-top: 50px;
     padding: 10px;
@@ -119,9 +119,9 @@
 
   .news-section {
     background-color: rgba(255, 255, 255, 0.1);
-    width: 90%;
-    height: 790px;
-    /* margin: 20px auto; */
+    width: 95%;
+    height: auto;
+    margin: 10px auto;
     margin-top: 30px;
     padding: 20px;
     text-align: center;
@@ -138,49 +138,52 @@
     text-align: justify;
   }
 
-  .weather-widget {
-    background-color: #333; /* Dark background for contrast */
-    color: #fff; /* White text for visibility */
-    padding: 10px 15px;
-    border-radius: 8px; /* Slightly rounded corners */
-    box-shadow: 0px 3px 7px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
-    font-family: 'Arial', sans-serif; /* Clean and simple font */
-    font-size: 10px; /* Smaller font for a compact look */
-    text-align: left;
-    position: absolute;
-    transition: top 0.3s ease; /* Smooth transition for top */
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #333; /* Dark background for the navbar */
+    color: #fff;
 }
 
 .weather-widget-container {
-    position: fixed; /* Fixed position on the screen */
-    top: 80px; /* Adjust based on navbar height */
-    left: 20px;
-    z-index: 1000; /* Keeps it above other content */
     display: flex;
-    flex-direction: column;
-    gap: 5px; 
+    align-items: center; /* Align items vertically in the center */
+    gap: 10px; /* Add spacing between elements */
     color: #fff;
-    padding: 10px; /* Smaller padding for compactness */
     background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    padding: 5px 10px; /* Compact padding */
     border-radius: 8px; /* Rounded corners */
     box-shadow: 0px 3px 7px rgba(0, 0, 0, 0.2); /* Subtle shadow */
 }
 
-.weather-widget-container .city {
-    font-size: 14px; /* Slightly larger font for the city */
-    font-weight: bold; /* Bold city name */
-}
-
-.weather-widget-container .temperature {
-    font-size: 14px; /* Larger font for the temperature */
-    font-weight: bold; /* Bold temperature */
-}
-
+.weather-widget-container .city,
+.weather-widget-container .temperature,
 .weather-widget-container .condition {
-    font-size: 14px; /* Smaller font for the condition */
-    font-style: italic; /* Italicize the condition text */
+    font-size: 14px; /* Uniform font size */
+    font-weight: bold; /* Bold text for emphasis */
 }
 
+.nav-links {
+    display: flex;
+    gap: 15px; /* Space between navigation links */
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    cursor: pointer;
+}
+
+.nav-links button {
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    font-size: 14px;
+}
 .result-container{
   display: flex;
   justify-content: flex-end;
