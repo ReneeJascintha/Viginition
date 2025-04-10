@@ -6,6 +6,7 @@ import NewsSection from "./NewsSection";
 const Home = ({ setIsSearching }) => {
   return (
     <div className="home">
+      <div className="scroll-div">
         <SearchBar setIsSearching={setIsSearching} />
         <div className="content">
         <div className="logo"></div></div>
@@ -14,6 +15,7 @@ const Home = ({ setIsSearching }) => {
           <h2>Latest News</h2>
           <NewsSection />
           {/* <WeatherWidget />  */}
+        </div>
         </div>
       </div>
     

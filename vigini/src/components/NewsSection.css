@@ -40,7 +40,7 @@
 }
 
 .news-card {
-    background-color: #616161;
+    background-color: #18101ff5;
     padding: 15px;
     border-radius: 10px;
     width: calc(33% - 20px); /* Default width for cards */
