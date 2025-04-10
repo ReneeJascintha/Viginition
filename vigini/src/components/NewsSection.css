@@ -1,0 +1,56 @@
+/* .news-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+  
+  .news-card {
+    background-color: #796363;
+    padding: 15px;
+    border-radius: 10px;
+    width: calc(50% - 10px);
+  }
+  
+   */
+
+/* .news-section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 15px;
+}
+
+.news-card {
+    background-color: #616161;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.news-image {
+    width: 100%; 
+    height: auto; 
+    border-radius: 10px; 
+    margin-bottom: 10px; 
+} */
+
+.news-section {
+    display: flex; /* Use flexbox for dynamic layout */
+    flex-wrap: wrap; /* Allow wrapping of items */
+    gap: 15px; /* Space between the cards */
+    justify-content: center; /* Center the cards horizontally */
+}
+
+.news-card {
+    background-color: #616161;
+    padding: 15px;
+    border-radius: 10px;
+    width: calc(33% - 20px); /* Default width for cards */
+    flex-grow: 1; /* Allow cards to grow dynamically */
+    box-sizing: border-box; /* Include padding and border in width */
+}
+
+.news-image {
+    width: 100%; /* Make the image take the full width of the card */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Match the card's border radius */
+    margin-bottom: 10px; /* Add spacing below the image */
+}

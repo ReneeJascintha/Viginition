@@ -107,11 +107,11 @@
   /* News Section */
   .news-section-home {
     background-color: rgba(255, 255, 255, 0.1);
-    width: 80%;
+    width: 90%;
     height: 980px;
     margin: 20px auto;
     margin-top: 50px;
-    padding: 20px;
+    padding: 10px;
     text-align: center;
     border-radius: 10px;
     z-index: 1;
@@ -119,9 +119,9 @@
 
   .news-section {
     background-color: rgba(255, 255, 255, 0.1);
-    width: 80%;
+    width: 90%;
     height: 790px;
-    margin: 20px auto;
+    /* margin: 20px auto; */
     margin-top: 30px;
     padding: 20px;
     text-align: center;
