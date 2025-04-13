@@ -3,14 +3,14 @@ import SearchBar from "./searchbar";
 import NewsSection from "./NewsSection";
 // import WeatherWidget from "./WeatherWidget";
 
-const Home = ({ setIsSearching }) => {
+const Home = ({ setIsSearching, setResults }) => {
   return (
     <div className="home">
       <div className="scroll-div">
-        <SearchBar setIsSearching={setIsSearching} />
+        <SearchBar setIsSearching={setIsSearching} setResults={setResults}/>
         <div className="content">
         <div className="logo"></div></div>
-        <div class="tagline">Precision in Every Search!</div>
+        <div className="tagline">Precision in Every Search!</div>
         <div className="news-section-home">
           <h2>Latest News</h2>
           <NewsSection />

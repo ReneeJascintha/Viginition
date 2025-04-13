@@ -7,11 +7,12 @@ import "./styles.css";
 
 const App = () => {
   const [isSearching, setIsSearching] = useState(false);
+  const [results, setResults] = useState([]);
 
   return (
     <div className="bg-container">      
     <Navbar setIsSearching={setIsSearching} /> {/* Navbar always visible */}
-      {!isSearching ? <Home setIsSearching={setIsSearching} /> : <SearchEnginePage />}
+      {!isSearching ? <Home setIsSearching={setIsSearching} setResults={setResults} /> : <SearchEnginePage setResults={setResults} results={results} setIsSearching={setIsSearching}/>}
       <DynamicBackground />
     </div>
   );

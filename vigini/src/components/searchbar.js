@@ -3,12 +3,22 @@ import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSearch } from "@fortawesome/free-solid-svg-icons";
 
-const SearchBar = ({ setIsSearching }) => {
+const SearchBar = ({ setIsSearching, setResults }) => {
   const [query, setQuery] = useState("");
 
-  const handleSearch = (e) => {
+  const handleSearch = async (e) => {
     e.preventDefault();
     if (query.trim() !== "") {
+
+      const response = await fetch('http://127.0.0.1:8000/search?query=' + query.split(' ').join('+'), {
+        method: 'GET',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+      });
+      const data = await response.json()
+      console.log(data)
+      setResults(data);
       setIsSearching(true);
     }
   };
