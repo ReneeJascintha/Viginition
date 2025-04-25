@@ -222,7 +222,6 @@
   z-index: 0;
 }
 .result-container{  
-  display: flex;
   height: 100%;
   width: 82%;
   background-color: rgba(247, 248, 248, 0.579);

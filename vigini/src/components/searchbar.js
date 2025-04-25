@@ -3,8 +3,7 @@ import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSearch } from "@fortawesome/free-solid-svg-icons";
 
-const SearchBar = ({ setIsSearching, setResults }) => {
-  const [query, setQuery] = useState("");
+const SearchBar = ({ setIsSearching, setResults, query, setQuery }) => {
 
   const handleSearch = async (e) => {
     e.preventDefault();
@@ -20,6 +19,7 @@ const SearchBar = ({ setIsSearching, setResults }) => {
       console.log(data)
       setResults(data);
       setIsSearching(true);
+      document.getElementById('summary-text').innerHTML = 'Please wait...';
     }
   };
 

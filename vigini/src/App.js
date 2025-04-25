@@ -8,11 +8,12 @@ import "./styles.css";
 const App = () => {
   const [isSearching, setIsSearching] = useState(false);
   const [results, setResults] = useState([]);
+  const [query, setQuery] = useState("");
 
   return (
     <div className="bg-container">      
     <Navbar setIsSearching={setIsSearching} /> {/* Navbar always visible */}
-      {!isSearching ? <Home setIsSearching={setIsSearching} setResults={setResults} /> : <SearchEnginePage setResults={setResults} results={results} setIsSearching={setIsSearching}/>}
+      {!isSearching ? <Home setIsSearching={setIsSearching} setResults={setResults} query={query} setQuery={setQuery}/> : <SearchEnginePage setResults={setResults} results={results} setIsSearching={setIsSearching} query={query} setQuery={setQuery}/>}
       <DynamicBackground />
     </div>
   );
