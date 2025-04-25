@@ -19,6 +19,13 @@ const Navbar = () => {
         </li>
         <li>
           <button>
+            <a href='http://localhost:8001'>
+            VulScanAI
+            </a>
+          </button>
+        </li>
+        <li>
+          <button>
             <a href='/about'>
             About
             </a>
