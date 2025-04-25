@@ -19,7 +19,6 @@ const SearchBar = ({ setIsSearching, setResults, query, setQuery }) => {
       console.log(data)
       setResults(data);
       setIsSearching(true);
-      document.getElementById('summary-text').innerHTML = 'Please wait...';
     }
   };
 

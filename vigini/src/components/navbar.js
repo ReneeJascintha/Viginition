@@ -1,18 +1,36 @@
-import React from "react";
-import WeatherWidget from "./WeatherWidget"; 
+import React from 'react';
 
-const Navbar = ({ setIsSearching }) => {
+const Navbar = () => {
+
   return (
     <nav className="navbar">
-      <div className="weather-widget-container">
-        <WeatherWidget />
+      <div className="navbar-brand">
+        <img src="/favicon.ico" alt="Vigini" />
+        <span>Vigini</span>
       </div>
+      
       <ul className="nav-links">
-        <li><button onClick={() => setIsSearching(false)}>Home</button></li>
-        <li>Vulscan AI</li>
-        <li>Contact us</li>
-        <li>About us</li>
-        <li>Help</li>
+        <li>
+          <button>
+            <a href='/'>
+            Home
+            </a>
+          </button>
+        </li>
+        <li>
+          <button>
+            <a href='/about'>
+            About
+            </a>
+          </button>
+        </li>
+        <li>
+          <button>
+            <a href='/contact'>
+            Contact
+            </a>
+          </button>
+        </li>
       </ul>
     </nav>
   );
